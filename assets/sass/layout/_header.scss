@@ -7,20 +7,27 @@
     z-index:10;
 }
 
-header{
-    background-repeat: no-repeat;
+header .header__img{
     width:100%;
-    background-size: cover;
-    img{
+    object {
+        width:100%;
+        img{
         width:100%;
         position: relative;
         margin-top:50px;
+        }
     }
 }
 
 //QUERIES
 @media only screen and(max-width: 768px) {
-    header img{
-        margin-top:200px;
+    .header__img{
+        margin-top:300px;
+    }
+}
+
+@media only screen and(max-width: 992px) {
+    header .header__img{
+        margin-top:100px;
 }
 }
