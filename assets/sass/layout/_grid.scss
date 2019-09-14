@@ -1,0 +1,38 @@
+.grid-container {
+    width:100%;
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-column-gap:1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 2fr 0.8fr 2fr 0.2fr;
+    grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar" "header header header header header header header header header header header header" "section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic" "section-price section-price section-price section-price section-price section-price section-price section-price section-price section-price section-price section-price" "footer footer footer footer footer footer footer footer footer footer footer footer";  
+  }
+.navbar { 
+  grid-area: navbar; 
+}
+
+.header { 
+  grid-area: header; 
+}
+
+.section-graphic { 
+  grid-area: section-graphic; 
+}
+  
+.section-price { 
+  grid-area: section-price; 
+}
+  
+.footer { 
+  grid-area: footer; 
+}
+
+//QUERIES
+@media only screen and(max-width: 768px) {
+  .grid-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.1fr 1fr 1fr 2fr 0.1fr;
+    grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar navbar" "header header header header header header header header header header header header" "section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic section-graphic" "section-price section-price section-price section-price section-price section-price section-price section-price section-price section-price section-price section-price" "footer footer footer footer footer footer footer footer footer footer footer footer";  
+  } 
+}

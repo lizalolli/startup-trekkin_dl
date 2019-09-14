@@ -1,0 +1,91 @@
+.container-1{
+    width: 95%;
+    margin:0 auto;
+}
+
+.section-graphic, .section-price{
+    h2{
+        text-align: center;
+    }    
+}
+
+//SECCION CARACT
+.section__graphic-content{
+    margin-top:50px;
+    display:flex;
+    justify-content: space-evenly;
+}
+//.section-graphic__graphic{
+    //float:left; 
+//}
+
+.section-graphic__text{
+    width:30vw;
+}
+
+#graphic{
+opacity:0;
+animation:fadeIn 2s ease-in 2s forwards;
+} 
+
+//QUERIES
+@media only screen and (max-width: 768px){
+.section-graphic__text, .section-graphic__graphic {
+    display: block; 
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+}
+.section__graphic-content{
+    display:block;
+    justify-content: space-evenly;
+}
+.section-graphic__text{
+    padding: 0 30px;
+}
+
+}
+
+//SECCION PRICE
+.section-price{
+    margin-top:50px;
+    padding-bottom:50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //padding-bottom: 100px;
+    h2{
+       margin-top:200px;
+        color:$white;
+    }
+}
+.section-price__boxes{
+    margin-top:50px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.section-price__box{
+    width:30vw;
+    padding:20px;
+    background-color:white;
+    li{
+        color:$raisin-black;
+        font-family: $open-sans;
+        font-size: $x-small;
+        line-height: 2rem;
+    }
+}
+
+//QUERIES
+@media only screen and (max-width: 768px){
+    .section-price__box{
+        display: block; 
+        width: 60vw;
+        margin: 0 auto;
+        margin-bottom:20px;
+    }
+    .section-price__boxes{
+        display:block; 
+    }
+    
+    }
